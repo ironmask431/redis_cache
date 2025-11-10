@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://localhost:3307/mydb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    url: jdbc:mariadb://localhost:3307/redis_cache?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
     username: root
     password: 1234
   jpa:
@@ -17,3 +17,5 @@ spring:
     redis:
       host: localhost
       port: 6379
+  cache:
+    type: redis
